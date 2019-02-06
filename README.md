@@ -1,1 +1,2 @@
 # FE_Base
+App con template base para utilizar en FE, se utiliza bootstrap_material_design para la parte visual de la app, la documentación de los componentes se puede encontrar en https://fezvrasta.github.io/bootstrap-material-design/docs/4.0/bootstrap-components/alerts/, para realizar los request se utiliza axios (https://github.com/axios/axios) consumiendo al web service con data dummy JSONPlaceholder (https://jsonplaceholder.typicode.com/).
