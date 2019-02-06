@@ -21,7 +21,7 @@
     <link href="src/assets/styles/custom.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body onload="loadFunction();">
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -137,5 +137,15 @@
     <script src="src/js/popper.min.js"></script>
     <script src="node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js"></script>
     <!-- <script src="../../../../dist/js/bootstrap-material-design.min.js"></script> -->
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script>
+        function loadFunction(){
+            console.log("dataLoaded");
+            axios.get('https://jsonplaceholder.typicode.com/posts').then(function(response){
+                const data=response.data;
+                console.log("responseData: ",data);
+            });
+        }
+    </script>
   </body>
 </html>
